@@ -1,0 +1,18 @@
+body{
+    background-image: url('/static/images/background.webp');
+    background-size: cover;
+
+}
+
+.search-card{
+    width: 60%;
+    height: 60%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+    background-color:lightblue;
+    opacity: 70%;
+
+}
