@@ -12,7 +12,7 @@ def index(request):
         if not city_name:
             city_name = 'Bengaluru'
 
-        url = f'https://api.openweathermap.org/data/2.5/weather?q={city_name}&appid=10c9fc6bb16a962ca2abe1e9cf9549b1'
+        url = f'https://api.openweathermap.org/data/2.5/weather?q={city_name}&appid={API_KEY}'
         PARAMS = {'units':'metric'}
 
         data = requests.get(url, PARAMS).json()
@@ -24,8 +24,8 @@ def index(request):
 
         exception_occured = False
         # search Engine api key
-        API_KEY = "AIzaSyCbfTja-QULgHaXWrIDXczbqeUEXYo9E-I"
-        SEARCH_ENGINE_ID = "32c6dc1d3ae704d92"
+        API_KEY = ""
+        SEARCH_ENGINE_ID = ""
 
         query = city_name + " 1920x1080"
         page = 1
